@@ -8,6 +8,9 @@ services:
     build: .
     ports:
       - "8080:80"
+
+    volumes:
+      - nagios.cfg:/opt/nagios/etc/nagios.cfg
 #    environment:
 ##      - ACCEPT_EULA=Y
 #      - SA_PASSWORD=Fatfrog99
