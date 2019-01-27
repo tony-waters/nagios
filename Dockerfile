@@ -1,0 +1,4 @@
+FROM jasonrivers/nagios:latest
+
+
+

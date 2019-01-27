@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  nagios:
+    container_name: nagios
+    image: nagios
+    build: .
+    ports:
+      - "80:8080"
+#    environment:
+##      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=Fatfrog99
+#    network_mode: host
+
+#networks:
+#
+#  capnet:
+#    external:
+#      name: capnet
