@@ -1,5 +1,7 @@
 FROM jasonrivers/nagios:latest
 
+RUN whoami && pwd && ls -la
+
 USER root
 
 COPY nagios.cfg /opt/nagios/etc/
